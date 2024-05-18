@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EloAgro Marketplace</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+
+  <div class="elohagro-header">
+    <div class="elohagro-logo">
+      <a href="/"><img src="./images/IMG-20240512-WA0002_1.jpg" alt="Elohagro Logo"></a>
+      <h5>WELCOME TO ELOHOAGRO MARKETPLACE</h5>
+    </div>
+    <div class="elohagro-search">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+    <nav class="elohagro-nav">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal" style= "font-size: 12px;
+          line-height: 15px;
+          background: #080808;
+          border: #0d0e0d solid 1px;
+          padding: 10px ;
+          display: inline-block;
+          color: white;
+        
+          border-radius: 2px;">Sign Up</a>
+        </li>
+        
+        <li><a href="/contact.html">CONTACT US</a></li>
+      </ul>
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel" >Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="termsCheckbox">
+            <label class="form-check-label" for="termsCheckbox">I agree to the terms and conditions</label>
+          </div>
+          
+      <button type="button" class=" btn btn-primary">SIGN UP</button>
+        </form>
+      </div>
+
+
+<!--  -->
+
+
+    </nav>
+  
+
+ 
+</div>
+  
+    <!-- Header content goes here -->
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <!-- <a class="navbar-brand" href="#">EloAgro Marketplace</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/market.html">Product Listings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/prod.html">Farm Market</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/profe.html">Agronomist Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/farm.html">Land Sales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/harv.html">Contract Harvesting</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal" style="  color: #fff;
+                  font-size: 17px;
+                  line-height: 10px;
+                  background: #1fec04;
+                  border: #0e5e04 solid 1px;
+                  padding: 12px 40px;
+                  display: inline-block;
+                  
+                
+                  border-radius: 8px;" >Login</a>
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-2" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">login </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          
+           
+      <button type="button" class=" btn btn-primary">LOGIN</button>
+          </form>
+        </div>
+
+
+<!--  -->
+    
+        
+ 
+    
+      </header>
+
+
+      
+      
+
+  <main class="site-content">
+    
+    
+    <!-- Main content goes here -->
+
+<div class="firstmain">
+  
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="./video/greenbg5_animation.mp4" type="video/mp4">
+    </video>
+    <!-- Your content goes here -->
+
+    <br><br><br><br>
+    <div class="slie">
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExample" data-slide-to="1"></li>
+          <li data-target="#carouselExample" data-slide-to="2"></li>
+          <li data-target="#carouselExample" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1 style="color: rgb(221, 245, 6); font-size: 50px;">Make Farming Easier With EloAgro </h1>
+            <p style="color: rgb(14, 105, 5); font-size: 30px;"> A Farming Company with the aim of <br> helping Farmers increase yileds, reduce cost, and <br> promote sustainable farming practice</p>
+          </div>
+          <div class="carousel-item">
+            <h1 style="color: green; font-size: 50px;">Elohagro Farmers Market </h1>
+            <p style="color: rgb(73, 19, 54); font-size: 30px;"> 
+    
+              <em>Experience the vibrant atmosphere of Elohagro Farmers Market - a hub for fresh, locally-sourced produce and artisanal goods. <br> Meet the passionate growers and makers behind the products, and <br>enjoy the social and economic benefits of a thriving community marketplace.</em>
+              
+              </p>
+          </div>
+          <div class="carousel-item">
+            <h1 style="color: green; font-size: 50px;">Elohagro Agrochemicals </h1>
+            <p style="color: rgb(15, 14, 14); font-size: 30px;"> 
+    
+              Enhance your crop yields and protect your farmlands with Elohagro Agrochemicals. <br>Our extensive range of high-quality products,<br> combined with expert agronomist consultancy and 24/7 online assistance, <br>ensures that you have the right tools and knowledge to succeed in your farming endeavors</p></em>
+          </div>
+          <div class="carousel-item">
+            <h1 style="color: green; font-size: 50px;">Elohagro Marketplace </h1>
+            <p style="color: rgb(92, 65, 6); font-size: 30px;"> 
+    
+             <em> Discover a world of agricultural possibilities with Elohagro Marketplace - <br>the premier platform for buying and selling agro-inputs and products. <br>Connect with a diverse range of suppliers and farmers, and access flexible payment options to support your business needs</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+      
+    
+    <br><br><br>
+     <a href="./market.html"><button type="button" class="jam btn btn-primary">Get Started</button></a> 
+    
+    
+    </div>
+    
+    
+    </div>
+
+
+  </div>
+
+
+
+<!-- first div ends here -->
+
+ 
+
+  
+
+
+
+
+<!-- congrats dear queen we made it pass this round[third div here] -->
+
+<div id="about" class="about">
+  <div class="container">
+      <div class="row">
+
+          <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
+              <div class="about_box">
+                  <h2>QUALITY<br><strong class="black"> AGRONOMIST SERVICE</strong></h2>
+                  <p>We provide quality and top-notch agronomist service,our Agronomist are certified and qualified with years of experience and always ready to use their resource,knowledge and experience to 
+                    help you have a quality farm experience.Our Agronomist also provide 24/7 online assistance.
+                  </p>
+                  <a href="./profe.html">Read More</a>
+              </div>
+          </div>
+          <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
+              <div class="about_img">
+                  <figure><img src="./images/agronomist.jpg" alt="img" /></figure>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- congracts love we did it again!!! -->
+
+
+
+
+
+<div class="video-background" style="height: 172vh !important;">
+  <video autoplay muted loop>
+    <source src="./video/greenbg5_animation.mp4" type="video/mp4">
+  </video><br><br><br>
+<div class="container-fluid  jude">
+<br><br><br><br><br>
+  <h4 style="margin: auto; text-align: center; color:black; font-family: Arial, Helvetica, sans-serif; font-size: 40px;">FARM LANDS</h4>
+  <br><br>
+  <div class="row ">
+  
+  <div class="col-sm-6">
+    <img src="./images/farm3.jpg" alt="" class="img-fluid" style="width: 950px;height: 59vh; border-radius: 40px; height: 80vh;">
+  <h4 style="margin: auto; text-align: center; background-color: beige; height: 12vh; border-radius: 20px;"> <br>CASSAVA FARM</h4>
+  </div>
+  
+  
+  <div class="col-sm-6">
+    <img src="./images/farmrice.jpg" alt="" class="img-fluid" style="border-radius: 40px; height: 80vh;">
+    <h4 style="margin: auto; text-align: center;background-color: beige; height: 12vh; border-radius: 20px;"><br>RICE FARM</h4>
+  </div>
+
+  </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+  <div class="choose ">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-8">
+             <div class="titlepage">
+                <h2>WE OFFER CONTRACT HARVESTERS</h2>
+                <br><br><br>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="container-fluid">
+       <div class="row d_flex">
+         <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+          <div class="padding_with">
+          <div class="row">
+             <div class="col-md-6 padding_bottom">
+                <div class="choose_box">
+                   <i><img src="images/icon1.png" alt="#"/></i>
+                   <div class="choose_text">
+                      <h3>Excellent Service</h3>
+                      <p>we offer top-notch services leaving you satisfied just as you should feel</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6 padding_bottom">
+                <div class="choose_box">
+                   <i><img src="images/icon2.png" alt="#"/></i>
+                   <div class="choose_text">
+                      <h3>Clean Working</h3>
+                      <p>our harvesters are trained to deliver perfect services neatly and beautiful</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6 padding_bottom2">
+                <div class="choose_box">
+                   <i><img src="images/3.png" alt="#"/></i>
+                   <div class="choose_text">
+                      <h3>Quality And Reliability</h3>
+                      <p>we deliver deligently without hesitation to promote our integrity.</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6">
+                <div class="choose_box">
+                   <i><img src="images/icon4.png" alt="#"/></i>
+                   <div class="choose_text">
+                      <h3>Expert Farmer</h3>
+                      <p>our farmers are well experience and very hardworking.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+  
+          </div>
+       </div>
+       <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+          <div class="choose_img">
+             <figure><img src="images/harvest picture.jpg" alt="#"/></figure>
+          </div>
+       </div>
+    </div>
+  </div>
+  
+  </div>
+
+  
+  
+  
+
+  <div class="video-background" >
+    <video autoplay muted loop>
+      <source src="./video/greenbg5_animation.mp4" type="video/mp4">
+    </video>
+
+
+
+
+<div class="container-fluid" >
+  
+<br><br><br><br><br><br>
+
+<h4 style="margin: auto; text-align: center; color: #eee8e8; height: 30vh; font-family: Arial, Helvetica, sans-serif; font-size: 40px;"><br>FARM PRODUCTS AND SEEDS</h4>
+
+<div class="row">
+<div class="col-sm-3">
+  <img src="./images/product_img1.jpg" alt="" class="img-fluid" style="border: 10px green solid; border-right: 20px; border-radius: 50px;border-bottom: 0; height: 50vh;">
+</div>
+
+
+<div class="col-sm-3"><br><br>
+  <img src="./images/offer2.png" alt="" class="img-fluid"style="border: 10px green solid; border-right: 20px; border-radius: 50px;border-bottom: 0; height: 50vh; " >
+</div>
+
+
+<div class="col-sm-3"><br><br><br><br>
+  <img src="./images/seed2.jpg"class="img-fluid"   alt="" style="border: 10px green solid; border-right: 20px; border-radius: 50px; border-bottom: 0; height: 50vh;" >
+</div>
+
+
+<div class="col-sm-3"><br><br><br><br><br><br>
+  <img src="./images/./seed1.jpg" alt="" class="img-fluid" style="border: 10px green solid; border-right: 20px; border-radius: 50px; border-bottom: 0; height: 50vh;">
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="./video/greenbg5_animation.mp4" type="video/mp4">
+  </video>
+  <br><br><br><br><br><br><br><br><br><br>
+
+<div class="container-fluid boss"  >
+<h4 style="margin: 0%; text-align: center;">PROFESSIONAL AGRONOMST</h4>
+><br><br><br><br><br>
+
+  <div class="row mt-3  ">
+    <div class="col-sm-4 trans">
+<div class="card my-5 mt-n5 border-success"  >
+
+    <div class="container  shadow" style="width: 90%; background-image: url(./images/2060.jpg); margin-left: 19px; margin-top: -20px; border-radius: 10px;">
+      <div class="container mt-5 text-white text-center">
+
+        <img src="./images/prof1.jpg" alt="">
+      </div>
+
+
+    </div>
+    
+    <div class="card-body mt-5 text-center">
+     <p>Dr. Maria Rodriguez, CPAg ( 10 years of experience) A renowned expert in soil science, Dr. Rodriguez has helped numerous farmers optimize their crop yields through her innovative agronomic practices. Her extensive knowledge in precision agriculture has earned her a reputation as a leading authority in the field.</p>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="col-sm-4 trans">
+<div class="card my-5 mt-n5 border-success " >
+
+    <div class="container bg-success shadow" style="width: 90%; margin-left: 19px; background-image: url(./images/2060.jpg); margin-top: -20px; border-radius: 10px;">
+      <div class="container mt-5 text-white text-center">
+
+        <img src="./images/prof3.jpg" alt="">
+      </div>
+
+
+    </div>
+    
+    <div class="card-body mt-5 text-center" >
+<p>Dr. Sophia Patel, CPAg (Female, 8 years of experience) With a specialization in crop protection, Dr. Patel has developed cutting-edge solutions to combat pests and diseases, ensuring maximum crop productivity for her clients. Her dedication to sustainable agriculture has made her a sought-after consultant in the industry.
+
+</p>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<div class="col-sm-4 trans">
+<div class="card my-5 mt-n5 border-success "  >
+
+    <div class="container bg-success shadow" style="width: 90%; margin-left: 19px;background-image: url(./images/2060.jpg);  margin-top: -20px; border-radius: 10px;">
+      <div class="container mt-5 text-white text-center">
+
+        <img src="./images/prof4.jpg" alt="">
+
+      </div>
+
+
+    </div>
+    
+    <div class="card-body mt-5 text-center">
+<P>Dr. John Taylor, CPAg ( 12 years of experience) A seasoned agronomist with a focus on irrigation management, Dr. Taylor has worked with farmers across the globe to implement efficient water usage practices. His expertise in agricultural water management has resulted in significant reductions in water waste and increased crop yields for his clients.
+
+</P>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="./video/greenbg5_animation.mp4" type="video/mp4">
+  </video>
+
+<br><br><br><br><br><br>
+  <div class="container">
+<br>
+
+  <h4 style="margin: auto; text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 40px;"><br><br>AGRO CHEMICALS</h4>
+<br><br><br>
+  <div class="row">
+  
+  <div class="col-sm-4">
+    <img src="./images/chem3.jpg" alt="" class="img-fluid" style="border: 10px green solid; border-right: 20px; border-radius: 50px;border-bottom: 0; ">
+  </div>
+  
+  
+  
+  <div class="col-sm-4">
+    <img src="./images/chem.jpg"class="img-fluid"   alt="" style="border: 10px green solid; border-top: 20px; border-radius: 50px; border-bottom: 0;" >
+  </div>
+  
+  
+  <div class="col-sm-4">
+    <img src="./images/chem6.jpg" alt="" class="img-fluid" style="border: 10px green solid; border-left: 20px; border-radius: 50px; border-bottom: 0;">
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  
+  
+
+
+  <!-- hottest -->
+  <div  class="hottest">
+    <div class="container">
+       <div class="row d_flex">
+          <div class="col-md-5">
+             <div class="titlepage">
+                <h2 style="font-size: 50px;"><br> <br> <br> ABOUT US</h2>
+             </div>
+          </div>
+          <div class="col-md-7">
+             <div class="hottest_box">
+                <p>Welcome to EloH Agro, your one-stop-shop for all your farming needs! We're dedicated to helping you grow your agricultural business with our comprehensive range of services. From high-quality farm inputs to expert aronomist services, we've got you covered. Our contract harvesting services ensure that your crops are harvested efficiently and effectively, maximizing your yields and profits.
+
+                  But that's not all. At EloH Agro, we're revolutionizing the way you access farm land with our innovative flexible farm land sale model. With our unique approach, you can pay for half of the farm upfront and settle the remaining balance after harvesting. This means you can focus on what matters most - growing your crops and reaping the rewards.
+                  
+                  At EloH Agro, we're committed to sharing the risks and rewards of farming with you. Our flexible lease agreements ensure that you only pay for what you produce, giving you the freedom to focus on your farming operations without worrying about fixed costs. Join the EloH Agro family today and discover a smarter way to farm!</p>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ </div>
+ </div>
+ <!-- end hottest -->
+
+
+  </main>
+  <footer class="site-footer">
+    <!-- Footer content goes here -->
+
+    <footer class="footer" style=" background-color: black; color: #eee8e8; ">
+        <!-- Container to center the content -->
+        <div class="container" style="height: 90vh;">
+            <div class="row" >
+                <!-- Column for About us section -->
+                <div class="col-lg-3 col-md-6 col-sm-6 " >
+                    <h5>About us</h5>
+                    <ul class="list-unstyled" >
+                        <li><a href="#"style="color: rgb(39, 240, 20);" >Company history</a></li>
+                        <li><a href="#" style="color: rgb(39, 240, 20);">Our team</a></li>
+                        <li><a href="#" style="color: rgb(39, 240, 20);">Our values</a></li>
+                        <li><a href="#"style="color: rgb(39, 240, 20);" >Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column for Useful links section -->
+                <div class="col-lg-3 col-md-6 col-sm-6" >
+                    <h5>Useful links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: rgb(39, 240, 20);">FAQ</a></li>
+                        <li><a href="#" style="color: rgb(39, 240, 20);">Privacy policy</a></li>
+                        <li><a href="#"style="color: rgb(39, 240, 20);" >Terms and conditions</a></li>
+                        <li><a href="#"style="color: rgb(39, 240, 20);">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column for Follow us section -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h5>Follow us</h5>
+                    <ul class="list-unstyled social-links">
+                        <li><a href="#"style="color: rgb(39, 240, 20);" ><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"style="color: rgb(39, 240, 20);" ><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"style="color: rgb(39, 240, 20);" ><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"style="color: rgb(39, 240, 20);" ><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Column for Newsletter section -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h5>Newsletter</h5>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <!-- Input field for email address -->
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <!-- Button to submit the form -->
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</footer>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>

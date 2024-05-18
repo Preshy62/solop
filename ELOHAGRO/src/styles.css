@@ -1,0 +1,698 @@
+.firstmain{
+
+/* background-image: url(/images/greenbg5.jpg); */
+background-repeat: no-repeat ;
+height: 100vh;
+margin: auto;
+background-size: cover;
+text-align: center;
+}
+
+.slie{
+position: relative;
+top: 80px;
+
+}
+
+
+
+
+.firstmain .btn{
+    background-color:rgb(36, 37, 37);
+border: none;
+bottom: 0;
+left: 0;
+right: 0;
+margin: 0 auto;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 15px;
+
+}
+
+.firstmain .btn:hover{
+    background-color: rgb(9, 247, 60);
+}
+
+.firstmain .btn:focus{
+    box-shadow: 4px 3px 3px 2px rgb(4, 77, 61);
+}
+
+.firstmain .btn:active{
+    background-color: rgb(29, 31, 31);
+}
+
+ 
+
+/** hottest section **/
+
+.hottest {
+  background: #fff;
+  padding: 90px 0 0px 0;
+}
+
+.hottest .titlepage {
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.hottest .titlepage h2 {
+  color: #000;
+}
+
+.hottest .hottest_box {
+  position: relative;
+  background-color: #10e73f;
+  padding: 60px 40px;
+}
+
+.hottest .hottest_box::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  width: 31px;
+  height: 100%;
+  background: url(../images/h_cross.png);
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center center;
+}
+
+.hottest .hottest_box p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+
+/** end hottest section **/
+
+
+/* congrats dear queen for completing firstdiv */
+
+
+.about {
+  padding: 90px 0;
+}
+
+.about .about_img figure {
+  margin: 0px;
+}
+
+.about .about_box {
+  text-align: left;
+  
+}
+
+.about .about_box h2 {
+  font-weight: 500;
+  font-size: 43px;
+  color: #163f03;
+  line-height: 55px;
+  padding-bottom: 7px;
+ display: block;
+ text-transform: uppercase;
+     padding: 0px 0px 6px 0px;
+         border-bottom: #163f03 solid 1px;
+}
+
+.about .about_box p {
+  font-size: 17px;
+  line-height: 33px;
+  color: #4c4a49;
+  padding: 40px 0px;
+  font-weight: 500;
+}
+.about .about_box a {
+      color: #fff;
+ font-size: 17px;
+ line-height: 29px;
+ background: #052501;
+ border: #052501 solid 1px;
+ padding: 12px 40px;
+ display: inline-block;
+ width: 231px;
+text-align: center;
+border-radius: 18px;
+}
+.about .about_box a:hover {
+ color: #fff;
+ background: #4bc714;
+ border: #4bc714 solid 1px;
+}
+.about_img {margin-top: 25px;}
+.about_img figure {margin: 0;}
+.about_img figure img {width: 100%;}
+
+
+
+/** choose  section **/
+
+.choose {
+
+  background-color:#13b60d;
+  padding: 90px 0 190px 0;
+  position: relative;
+}
+
+
+.choose .titlepage {
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.choose .titlepage h2 {
+  color: #fff;
+}
+
+.choose .titlepage p {
+  color: #fff;
+  display: block;
+  font-size: 17px;
+  padding-top: 20px;
+  line-height: 32px;
+}
+
+.choose_img {
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.choose_img figure {
+  margin: 0;
+  margin-left: -50px;
+}
+
+.choose_img figure img {
+  width: 100%;
+}
+
+.padding_with {
+  max-width: 653px;
+  float: right;
+  width: 100%;
+}
+
+.choose_box {
+  display: flex;
+}
+
+.choose_box i {
+  float: left;
+}
+
+.choose_box i img {
+  float: left;
+  background-color: #f4cb1e;
+  width: 140px;
+  padding: 10px;
+  border-radius: 60px;
+}
+
+.choose_text {
+  float: right;
+  padding-left: 20px;
+}
+
+.choose_text h3 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.choose_text p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.padding_bottom {
+  padding-bottom: 30px;
+}
+
+
+/** end choose  section **/
+.video-background {
+  position: relative;
+  height: 160vh;
+  overflow: hidden;
+  
+}
+
+ .video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} 
+
+/* we made it again dear queen! third div */
+
+.card-img-top{
+
+    margin-top: -16px;
+    margin-left: 1px !important;
+    box-shadow: 4px 3px 3px 2px grey;
+    
+    }
+
+    .trans{
+
+        transition: all 0.5s ease-in-out;
+        box-shadow: 2px 2px 2px 1px lawngreen;
+        cursor: pointer;
+        
+        }
+        
+        .trans:hover{
+        
+        transform: translate(-5px);
+        
+        }
+    
+    
+    .round-image{
+
+width: 200px;
+height: 450px;
+border-radius: 56%;
+border: 5px solid #228b22;
+overflow: hidden;
+
+    }
+
+.round-image img{
+
+ width: 100%;
+ height: auto;
+    
+}
+
+.boss{
+  background-image: url(./images/greenbg5.jpg); background-repeat:no-repeat ; background-size: cover;
+
+}
+
+
+.elohagro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+  background-color: #13b60d;
+}
+
+.elohagro-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.elohagro-logo img {
+  height: auto;
+  max-height: 100px;
+  width: 100%;
+}
+
+.elohagro-search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #444;
+  border-radius: 20px;
+  background-color: #444;
+}
+
+.elohagro-search input[type="text"] {
+  flex-grow: 1;
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+}
+
+.elohagro-search button[type="submit"] {
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+.elohagro-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.elohagro-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.elohagro-nav li {
+  margin-right: 20px;
+}
+
+.elohagro-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-links {
+    margin-bottom: 20px; /* add some space between the links and the next section */
+  }
+  
+  .footer-links li {
+    margin-bottom: 20px; /* add some space between each link */
+    padding-left: 40px; /* add some padding to the left of each link */
+
+  }
+  
+  .social-links {
+    margin-bottom: 20px; /* add some space between the social links and the next section */
+  }
+  
+  .social-links li {
+    margin-bottom: 10px; /* add some space between each social link */
+    padding-left: 20px; /* add some padding to the left of each social link */
+  }
+  
+  .social-links i {
+    font-size: 24px; /* increase the font size of the social media icons */
+    margin-right: 10px; /* add some space between the icon and the link text */
+  }
+
+ .footer ul li {
+
+padding: 30px;
+
+
+  }
+
+
+  /* Global variables */
+:root {
+    --primary-color: #228b22;
+    --secondary-color: #eee8e8;
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+  }
+  
+  /* Reset styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    background-color: var(--secondary-color);
+  }
+  
+  /* Header styles */
+   header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+  } 
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  /* Main styles */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  main section {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  main section h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+  }
+  
+  main section p {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer li {
+    margin-right: 20px;
+  }
+  
+  footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width:768px) {
+    /* Mobile devices */
+    main section {
+      flex-direction: column;
+      
+    }
+    main section h2 {
+      font-size: 18px;
+    }
+    main section p {
+      font-size: 14px;
+    }
+
+    .firstmain{
+width: 100%;
+height: 130vh;
+    }
+
+
+    .secondmain {
+      
+      position: relative;
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 100%;
+font-size: 20px;
+max-height: -10vh;
+      
+    }
+    .hero {
+      height: 10vh;
+    }
+    
+    /* .container .jane {
+      padding: 20px;
+    } */
+
+
+    .video-background {
+      position: relative;
+      height: 320vh;
+      overflow: hidden;
+      
+    }
+    
+     .video-background video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      background-color: transparent;
+    } 
+    
+    .video-background .container-fluid {
+
+     max-height: 20vh !important;
+    }
+
+    
+    .hero-text {
+      background-color: black;
+      color: beige;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    
+   
+
+.footer{
+
+height: 190vh;
+
+}
+
+
+.elohagro-header {
+
+  width: 100%;
+}
+
+.elohagro-logo {
+display: none;
+}
+
+.elohagro-logo img {
+display: none;
+}
+
+
+
+
+
+     @media (max-width: 767.98px) {
+      .img-fluid {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+    } 
+    
+
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablets */
+    main section {
+      flex-direction: column;
+    }
+    main section h2 {
+      font-size: 20px;
+    }
+    main section p {
+      font-size: 16px;
+    }
+
+
+    .firstmain {
+      height: 80vh;
+    }
+    
+     .secondmain .container .row .col-sm-4 img{
+width: 100%;
+max-width: 100%;
+height: 60vh;
+
+    }
+    
+    .secondmain .col-sm-6 {
+    
+      width: 100%;
+    
+  font-size: 48px;
+  display: flex;
+  flex-direction: row;
+    }
+    
+    .jude {
+      width: 40%;
+      margin: 0 auto;
+      
+    }
+    
+    .jude .img-fluid {
+      width: 100%;
+      height: 40vh;
+    }
+    
+
+  
+
+  
+
+   .container-fluid .row .card img{
+
+      width: 100%;
+      max-width: 100%;
+      box-shadow: 4px 3px 3px 2px grey;
+      
+      }
+
+      
+.container-fluid.boss  .row .card{
+
+  display: flex;
+  flex-direction: column;
+  
+  }
+  
+
+
+    .footer {
+      height: 120vh;
+    }
+  }
+
+    
